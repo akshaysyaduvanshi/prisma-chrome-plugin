@@ -1,0 +1,17 @@
+{
+    "name": "Prisma Secure",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["https://*.cloud.google.com/*", "http://*.cloud.google.com/*"],
+        "js": ["content.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "icons": {
+        "16": "prisma.png",
+        "32": "prisma.png",
+        "48": "prisma.png"
+    }
+}
